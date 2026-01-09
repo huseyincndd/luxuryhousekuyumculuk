@@ -1,0 +1,194 @@
+app.tsx:
+import React from 'react';
+import { Navbar } from './components/Navbar';
+import { Hero } from './components/Hero';
+import { Collections } from './components/Collections';
+import { ProductGrid } from './components/ProductGrid';
+import { Heritage } from './components/Heritage';
+import { Newsletter } from './components/Newsletter';
+import { Footer } from './components/Footer';
+
+function App() {
+  return (
+    <div className="min-h-screen bg-luxury-black text-gray-100 font-sans selection:bg-luxury-gold selection:text-luxury-green-900">
+      <Navbar />
+      <main>
+        <Hero />
+        <Collections />
+        
+        {/* Quote Section */}
+        <div className="py-24 bg-luxury-green-900 text-center px-6 border-y border-luxury-gold/10">
+          <div className="max-w-3xl mx-auto">
+             <div className="text-luxury-gold mb-6 text-4xl font-serif">"</div>
+             <p className="font-serif text-2xl md:text-3xl text-white italic leading-relaxed mb-6">
+              Mücevher, sessizliğin içinde bile bir kadının ruhunu haykıran en zarif şiirdir.
+             </p>
+             <p className="text-emerald-500 text-sm tracking-[0.2em] uppercase font-bold">— Luxury House Tasarım Ekibi</p>
+          </div>
+        </div>
+
+        <ProductGrid />
+        <Heritage />
+        <Newsletter />
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+index.html:
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury House Kuyumculuk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Cinzel', 'serif'],
+              sans: ['Lato', 'sans-serif'],
+            },
+            colors: {
+              luxury: {
+                black: '#020403', // Very dark green-black
+                green: {
+                   900: '#062c23', // Deepest Emerald
+                   800: '#0c4a3c', // Deep Emerald
+                   700: '#116149', // Rich Emerald
+                },
+                gold: {
+                  DEFAULT: '#D4AF37',
+                  light: '#F3E5AB',
+                  dark: '#AA771C',
+                },
+              }
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 1s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #020403;
+        color: #f3f4f6;
+      }
+      .gold-gradient-text {
+        background: linear-gradient(to right, #D4AF37, #F3E5AB, #AA771C, #F3E5AB, #D4AF37);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-size: 200% auto;
+        animation: shine 5s linear infinite;
+      }
+      @keyframes shine {
+        to {
+          background-position: 200% center;
+        }
+      }
+      .btn-luxury {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s ease;
+      }
+      .btn-luxury::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: 0.5s;
+      }
+      .btn-luxury:hover::before {
+        left: 100%;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
+
+
+index.tsx:
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+
+const rootElement = document.getElementById('root');
+if (!rootElement) {
+  throw new Error("Could not find root element to mount to");
+}
+
+const root = ReactDOM.createRoot(rootElement);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+metadata.json:
+{
+  "name": "Luxury House Kuyumculuk",
+  "description": "Premium jewelry store application featuring exclusive emerald and gold collections.",
+  "requestFramePermissions": []
+}
+
+
+
+
+types.ts:
+export interface Product {
+  id: number;
+  name: string;
+  price: string;
+  category: string;
+  image: string;
+}
+
+export interface GeneratedDesign {
+  imageUrl: string | null;
+  description: string | null;
+}
+
+export enum DesignStatus {
+  IDLE = 'IDLE',
+  LOADING = 'LOADING',
+  SUCCESS = 'SUCCESS',
+  ERROR = 'ERROR'
+}
