@@ -66,8 +66,7 @@ export default function IletisimPage() {
                         <div>
                            <h4 className="font-serif text-xl md:text-2xl text-white mb-1 md:mb-2">Flagship Store</h4>
                            <p className="text-gray-400 font-light leading-relaxed text-xs md:text-sm">
-                             Bağdat Caddesi, No: 420 <br/>
-                             Suadiye, İstanbul
+                             Beylikdüzü, İstanbul
                            </p>
                            <a href="#map" className="text-luxury-gold text-[10px] md:text-xs uppercase tracking-wider mt-2 inline-block border-b border-transparent hover:border-luxury-gold">Haritada Göster</a>
                         </div>
@@ -165,13 +164,14 @@ export default function IletisimPage() {
         {/* 3. MAP SECTION */}
         <section id="map" className="w-full h-[400px] md:h-[500px] relative filter grayscale contrast-125 hover:grayscale-0 transition-all duration-1000">
            <iframe 
-             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.650490016024!2d29.09347891541315!3d40.96216497930545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7a7c0612667%3A0x77d903666b61833e!2zU3VhZGl5ZSwgQmHEn2RhdCBDZC4gTm86NDIwLCAzNDc0MCBLYWTEsWvDtnkvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1625123456789!5m2!1str!2str" 
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.123456789!2d28.644444!3d41.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b55b3c0c0c0c0c%3A0x0!2zQmV5bGlrZMO8esO8LCBJc3RhbmJ1bA!5e0!3m2!1str!2str!4v1625123456789!5m2!1str!2str"
              width="100%" 
              height="100%" 
              style={{border:0}} 
              allowFullScreen 
              loading="lazy"
              className="opacity-70"
+             referrerPolicy="no-referrer-when-downgrade"
            ></iframe>
            
            <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent pointer-events-none"></div>

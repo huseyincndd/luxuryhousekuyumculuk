@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const CATEGORIES = [
   {
@@ -65,7 +66,7 @@ export const Collections: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
           {CATEGORIES.map((cat, idx) => (
-            <div key={cat.id} className="group relative h-[450px] md:h-[550px] overflow-hidden cursor-pointer bg-black/50 backdrop-blur-sm border border-white/5 hover:border-luxury-gold/30 transition-all duration-500 shadow-2xl" style={{animationDelay: `${idx * 0.15}s`}}>
+            <Link key={cat.id} href="/koleksiyonlar" className="group relative h-[450px] md:h-[550px] overflow-hidden cursor-pointer bg-black/50 backdrop-blur-sm border border-white/5 hover:border-luxury-gold/30 transition-all duration-500 shadow-2xl block" style={{animationDelay: `${idx * 0.15}s`}}>
               
               {/* Image Container with Zoom Effect */}
               <div className="absolute inset-0 overflow-hidden">
@@ -101,7 +102,7 @@ export const Collections: React.FC = () => {
                 </div>
               </div>
 
-            </div>
+            </Link>
           ))}
         </div>
       </div>

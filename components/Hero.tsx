@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
 
 export const Hero: React.FC = () => {
@@ -33,12 +34,12 @@ export const Hero: React.FC = () => {
         </p>
         
         <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center w-full md:w-auto animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-          <button className="btn-luxury w-full md:w-auto min-w-[200px] bg-luxury-gold text-luxury-green-900 px-8 py-4 tracking-[0.2em] uppercase hover:bg-white hover:text-luxury-green-900 transition-all duration-300 font-bold border border-luxury-gold shadow-[0_0_20px_rgba(212,175,55,0.4)] text-xs md:text-sm">
+          <Link href="/koleksiyonlar" className="btn-luxury w-full md:w-auto min-w-[200px] bg-luxury-gold text-luxury-green-900 px-8 py-4 tracking-[0.2em] uppercase hover:bg-white hover:text-luxury-green-900 transition-all duration-300 font-bold border border-luxury-gold shadow-[0_0_20px_rgba(212,175,55,0.4)] text-xs md:text-sm text-center inline-block">
             Koleksiyonu Keşfet
-          </button>
-          <button className="btn-luxury w-full md:w-auto min-w-[200px] bg-transparent text-white border border-white/30 px-8 py-4 tracking-[0.2em] uppercase hover:bg-luxury-green-800 hover:border-luxury-gold hover:text-luxury-gold transition-all duration-300 backdrop-blur-sm text-xs md:text-sm">
+          </Link>
+          <Link href="/iletisim" className="btn-luxury w-full md:w-auto min-w-[200px] bg-transparent text-white border border-white/30 px-8 py-4 tracking-[0.2em] uppercase hover:bg-luxury-green-800 hover:border-luxury-gold hover:text-luxury-gold transition-all duration-300 backdrop-blur-sm text-xs md:text-sm text-center inline-block">
             Randevu Oluştur
-          </button>
+          </Link>
         </div>
       </div>
 

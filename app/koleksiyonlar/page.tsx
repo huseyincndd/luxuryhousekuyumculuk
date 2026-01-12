@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from '../../components/Navbar';
 import { Footer } from '../../components/Footer';
-import { ArrowRight, Star, Gem, PenTool, Sparkles, MoveRight } from 'lucide-react';
+import { ArrowRight, Star, Gem, PenTool, Sparkles } from 'lucide-react';
 
 const COLLECTIONS = [
   {
@@ -130,13 +130,9 @@ export default function KoleksiyonlarPage() {
                     <h2 className="font-serif text-3xl md:text-5xl text-white mb-4 md:mb-6 leading-tight">
                       {col.title}
                     </h2>
-                    <p className="text-gray-400 leading-relaxed mb-6 md:mb-8 text-sm md:text-base">
+                    <p className="text-gray-400 leading-relaxed text-sm md:text-base">
                       {col.description}
                     </p>
-                    <button className={`group inline-flex items-center gap-2 text-white border-b border-white/30 pb-1 hover:border-luxury-gold hover:text-luxury-gold transition-all duration-300 uppercase text-[10px] md:text-xs tracking-widest ${index % 2 === 1 ? 'flex-row-reverse' : ''}`}>
-                      Parçaları İncele
-                      <MoveRight className={`w-4 h-4 transition-transform ${index % 2 === 1 ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
-                    </button>
                   </div>
                 </div>
 
@@ -190,12 +186,9 @@ export default function KoleksiyonlarPage() {
              <h2 className="font-serif text-4xl md:text-7xl text-white mb-6 md:mb-8">
                Kendi Koleksiyonunuzu <br/> <span className="text-luxury-gold italic">Yaratın</span>
              </h2>
-             <p className="text-gray-300 text-sm md:text-lg mb-8 md:mb-10 max-w-2xl mx-auto">
+             <p className="text-gray-300 text-sm md:text-lg max-w-2xl mx-auto">
                Mevcut koleksiyonlarımız size ilham versin, hayalinizdeki tasarımı birlikte gerçeğe dönüştürelim.
              </p>
-             <button className="bg-white text-black px-8 py-4 md:px-12 md:py-5 uppercase tracking-[0.2em] font-bold hover:bg-luxury-gold hover:text-black transition-colors duration-300 text-xs md:text-base">
-               Özel Tasarım Randevusu
-             </button>
            </div>
         </section>
 

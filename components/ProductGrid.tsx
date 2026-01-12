@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import { Product } from '../types';
 
 const PRODUCTS: Product[] = [
@@ -46,12 +45,6 @@ export const ProductGrid: React.FC = () => {
               Sezonun <span className="text-luxury-gold italic">Favorileri</span>
             </h2>
           </div>
-          <Link 
-            href="/urunler"
-            className="hidden md:block border-b border-luxury-gold text-luxury-gold pb-1 hover:text-white hover:border-white transition-all duration-300 tracking-widest uppercase text-xs whitespace-nowrap"
-          >
-            Tümünü Gör
-          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -64,31 +57,15 @@ export const ProductGrid: React.FC = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
                 />
                 <div className="absolute inset-0 bg-luxury-green-900/0 group-hover:bg-luxury-green-900/40 transition-colors duration-500"></div>
-                
-                {/* Action Button */}
-                <div className="absolute bottom-6 left-6 right-6 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                   <button className="w-full bg-white/90 backdrop-blur text-luxury-green-900 py-3 text-xs tracking-[0.2em] font-bold uppercase hover:bg-luxury-gold transition-colors">
-                     İncele
-                   </button>
-                </div>
               </div>
               <div className="text-center group-hover:-translate-y-2 transition-transform duration-500">
                 <p className="text-emerald-400/70 text-[10px] tracking-[0.2em] uppercase mb-2">{product.category}</p>
-                <h3 className="text-white font-serif text-lg mb-2 group-hover:text-luxury-gold transition-colors">{product.name}</h3>
-                <p className="text-luxury-gold font-bold tracking-wider">{product.price}</p>
+                <h3 className="text-white font-serif text-lg group-hover:text-luxury-gold transition-colors">{product.name}</h3>
               </div>
             </div>
           ))}
         </div>
         
-        <div className="text-center mt-12 md:hidden">
-          <Link 
-            href="/urunler"
-            className="border-b border-luxury-gold text-luxury-gold pb-1 hover:text-white hover:border-white transition-all duration-300 tracking-widest uppercase text-sm"
-          >
-            Tüm Koleksiyonu İncele
-          </Link>
-        </div>
       </div>
     </section>
   );

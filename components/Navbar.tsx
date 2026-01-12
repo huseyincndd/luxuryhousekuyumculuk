@@ -20,9 +20,8 @@ export const Navbar: React.FC = () => {
 
   const navItems = [
     { label: 'Ana Sayfa', href: '/' },
-    { label: 'Koleksiyonlar', href: '/koleksiyonlar' },
-    { label: 'Ürünler', href: '/urunler' },
     { label: 'Hakkımızda', href: '/hakkimizda' },
+    { label: 'Koleksiyonlar', href: '/koleksiyonlar' },
     { label: 'İletişim', href: '/iletisim' },
   ];
 
@@ -63,7 +62,7 @@ export const Navbar: React.FC = () => {
             </Link>
           ))}
           <Link 
-            href="/randevu"
+            href="/iletisim"
             className="btn-luxury bg-luxury-gold text-luxury-green-900 px-8 py-2.5 text-xs font-bold tracking-[0.2em] hover:bg-white hover:text-luxury-green-900 transition-all duration-500 uppercase border border-luxury-gold shadow-[0_0_15px_rgba(212,175,55,0.3)] hover:shadow-[0_0_25px_rgba(212,175,55,0.6)]"
           >
             Randevu Al
@@ -97,7 +96,7 @@ export const Navbar: React.FC = () => {
             </Link>
           ))}
           <Link
-            href="/randevu"
+            href="/iletisim"
             className="bg-luxury-gold text-luxury-green-900 px-8 py-3 text-xs font-bold tracking-[0.2em] hover:bg-white transition-all duration-500 uppercase mt-2"
             onClick={() => setIsMobileMenuOpen(false)}
           >

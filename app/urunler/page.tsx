@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { Navbar } from '../../components/Navbar';
 import { Footer } from '../../components/Footer';
 import { Filter, Search, ShieldCheck, Truck, Gift, Star } from 'lucide-react';
@@ -10,73 +11,57 @@ const PRODUCTS = [
     id: 1,
     name: "Royal Emerald Ring",
     description: "2.5 Karat Kolombiya Zümrüdü & Pırlanta",
-    price: "₺185.000",
     category: "Yüzük",
-    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1000",
-    tag: "Editörün Seçimi"
+    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1000"
   },
   {
     id: 2,
     name: "Sapphire Midnight Necklace",
     description: "18 Ayar Beyaz Altın & Safir",
-    price: "₺145.000",
     category: "Kolye",
-    image: "https://images.unsplash.com/photo-1599643478518-17488fbbcd75?auto=format&fit=crop&q=80&w=1000",
-    tag: null
+    image: "https://images.unsplash.com/photo-1599643478518-17488fbbcd75?auto=format&fit=crop&q=80&w=1000"
   },
   {
     id: 3,
     name: "Golden Serpent Bracelet",
     description: "24 Ayar El İşçiliği Kelepçe",
-    price: "₺92.500",
     category: "Bileklik",
-    image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=1000",
-    tag: "Tükeniyor"
+    image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=1000"
   },
   {
     id: 4,
     name: "Pearl Sovereignty Earrings",
     description: "Güney Denizi İncisi",
-    price: "₺48.000",
     category: "Küpe",
-    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1000",
-    tag: null
+    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1000"
   },
   {
     id: 5,
     name: "Noir Diamond Solitaire",
     description: "Platin Montür & Siyah Elmas",
-    price: "₺125.000",
     category: "Yüzük",
-    image: "https://images.unsplash.com/photo-1603561591411-cd7eb9a0093b?auto=format&fit=crop&q=80&w=1000",
-    tag: "Yeni"
+    image: "https://images.unsplash.com/photo-1603561591411-cd7eb9a0093b?auto=format&fit=crop&q=80&w=1000"
   },
   {
     id: 6,
     name: "Vintage Ruby Pendant",
     description: "Antik Kesim Yakut",
-    price: "₺210.000",
     category: "Kolye",
-    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1000",
-    tag: null
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1000"
   },
   {
     id: 7,
     name: "Imperial Topaz Ring",
     description: "Nadir İmparatorluk Topazı",
-    price: "₺165.000",
     category: "Yüzük",
-    image: "https://images.unsplash.com/photo-1589674781759-c21c37956a44?auto=format&fit=crop&q=80&w=1000",
-    tag: null
+    image: "https://images.unsplash.com/photo-1589674781759-c21c37956a44?auto=format&fit=crop&q=80&w=1000"
   },
   {
     id: 8,
     name: "Diamond Tennis Bracelet",
     description: "Toplam 5 Karat Pırlanta",
-    price: "₺240.000",
     category: "Bileklik",
-    image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&q=80&w=1000",
-    tag: "Popüler"
+    image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&q=80&w=1000"
   }
 ];
 
@@ -168,13 +153,6 @@ export default function UrunlerPage() {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
-                    
-                    {/* Floating Tag */}
-                    {product.tag && (
-                      <div className="absolute top-3 left-3 bg-luxury-gold/90 backdrop-blur-sm text-black text-[10px] font-bold px-3 py-1 rounded-sm uppercase tracking-wider">
-                        {product.tag}
-                      </div>
-                    )}
                   </div>
 
                   {/* Product Info */}
@@ -182,10 +160,7 @@ export default function UrunlerPage() {
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="text-base md:text-lg font-serif text-white group-hover:text-luxury-gold transition-colors line-clamp-1">{product.name}</h3>
                     </div>
-                    <p className="text-xs text-gray-500 mb-4 font-sans tracking-wide truncate">{product.description}</p>
-                    <div className="flex justify-between items-center border-t border-white/5 pt-4">
-                      <span className="text-luxury-gold font-bold text-sm md:text-lg">{product.price}</span>
-                    </div>
+                    <p className="text-xs text-gray-500 font-sans tracking-wide truncate">{product.description}</p>
                   </div>
 
                 </div>
@@ -252,9 +227,9 @@ export default function UrunlerPage() {
                 Mücevher uzmanlarımız, stilinize ve bütçenize en uygun parçayı bulmanız için 
                 online görüntülü görüşme ile yanınızda.
               </p>
-              <button className="bg-black text-white px-6 py-3 md:px-10 md:py-4 rounded-full text-sm md:text-base font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 shadow-xl">
+              <Link href="/iletisim" className="inline-block bg-black text-white px-6 py-3 md:px-10 md:py-4 rounded-full text-sm md:text-base font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 shadow-xl">
                 Randevu Oluştur
-              </button>
+              </Link>
             </div>
           </div>
         </section>

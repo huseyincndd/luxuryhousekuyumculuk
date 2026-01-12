@@ -1,10 +1,10 @@
 import React from 'react';
 import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
+import { LiveTicker } from '../components/LiveTicker';
 import { Collections } from '../components/Collections';
 import { ProductGrid } from '../components/ProductGrid';
 import { Heritage } from '../components/Heritage';
-import { Newsletter } from '../components/Newsletter';
 import { Footer } from '../components/Footer';
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <LiveTicker />
         <Collections />
         
         {/* Quote Section */}
@@ -28,7 +29,6 @@ function App() {
 
         <ProductGrid />
         <Heritage />
-        <Newsletter />
       </main>
       <Footer />
     </div>
