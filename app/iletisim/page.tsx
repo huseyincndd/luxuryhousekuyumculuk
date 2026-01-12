@@ -66,7 +66,8 @@ export default function IletisimPage() {
                         <div>
                            <h4 className="font-serif text-xl md:text-2xl text-white mb-1 md:mb-2">Flagship Store</h4>
                            <p className="text-gray-400 font-light leading-relaxed text-xs md:text-sm">
-                             Beylikdüzü, İstanbul
+                             BÜYÜKŞEHİR MAH. BEYLİKDÜZÜ CD. No: 5 F<br />
+                             BEYLİKDÜZÜ / İSTANBUL
                            </p>
                            <a href="#map" className="text-luxury-gold text-[10px] md:text-xs uppercase tracking-wider mt-2 inline-block border-b border-transparent hover:border-luxury-gold">Haritada Göster</a>
                         </div>
@@ -82,7 +83,7 @@ export default function IletisimPage() {
                            <p className="text-gray-400 font-light text-xs md:text-sm">
                              Haftanın her günü, 09:00 - 22:00
                            </p>
-                           <p className="text-white text-base md:text-lg mt-1">+90 (212) 555 01 23</p>
+                           <p className="text-white text-base md:text-lg mt-1">+90 539 719 65 58</p>
                         </div>
                      </div>
                   </div>
@@ -164,7 +165,7 @@ export default function IletisimPage() {
         {/* 3. MAP SECTION */}
         <section id="map" className="w-full h-[400px] md:h-[500px] relative filter grayscale contrast-125 hover:grayscale-0 transition-all duration-1000">
            <iframe 
-             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.123456789!2d28.644444!3d41.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b55b3c0c0c0c0c%3A0x0!2zQmV5bGlrZMO8esO8LCBJc3RhbmJ1bA!5e0!3m2!1str!2str!4v1625123456789!5m2!1str!2str"
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.8!2d28.6444!3d41.0036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAwJzEzLjAiTiAyOMKwMzgnMzkuOCJF!5e0!3m2!1str!2str!4v1736676000000!5m2!1str!2str"
              width="100%" 
              height="100%" 
              style={{border:0}} 
