@@ -56,7 +56,7 @@ export const Hero: React.FC = () => {
                 <div className="text-center">
                     <p className="text-luxury-gold text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mb-2">Lokasyon</p>
                     <p className="text-white font-serif text-sm md:text-lg leading-relaxed">
-                        Büyükşehir Mah. Beylikdüzü Cd. No: 5 F
+                        Büyükşehir Mah. Beylikdüzü Cd. A Blok No: 5 F
                     </p>
                     <p className="text-gray-400 text-xs md:text-sm mt-1">Beylikdüzü / İstanbul</p>
                 </div>
@@ -65,7 +65,12 @@ export const Hero: React.FC = () => {
                         Bize Ulaşın
                     </a>
                     <span className="text-white/20">|</span>
-                    <a href="https://maps.google.com/?q=Luxury+House+Kuyumculuk+Beylikdüzü" target="_blank" rel="noreferrer" className="text-xs text-white border-b border-white/30 hover:text-luxury-gold hover:border-luxury-gold transition-colors pb-0.5 uppercase tracking-wider">
+                    <a
+                      href="https://www.google.com/maps?q=41.0036,28.6444"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-xs text-white border-b border-white/30 hover:text-luxury-gold hover:border-luxury-gold transition-colors pb-0.5 uppercase tracking-wider"
+                    >
                         Haritada Aç
                     </a>
                 </div>

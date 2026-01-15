@@ -48,9 +48,12 @@ export const Heritage: React.FC = () => {
              </div>
           </div>
 
-          <button className="btn-luxury inline-flex items-center gap-2 text-white border-b border-luxury-gold pb-1 hover:text-luxury-gold transition-colors tracking-widest uppercase text-xs font-bold pt-2">
+          <a
+            href="/hakkimizda"
+            className="btn-luxury inline-flex items-center gap-2 text-white border-b border-luxury-gold pb-1 hover:text-luxury-gold transition-colors tracking-widest uppercase text-xs font-bold pt-2"
+          >
             Hikayemizi Okuyun
-          </button>
+          </a>
         </div>
       </div>
     </section>

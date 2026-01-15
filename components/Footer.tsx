@@ -58,7 +58,7 @@ export const Footer: React.FC = () => {
                <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-luxury-gold/20 transition-colors">
                  <MapPin className="w-4 h-4 text-luxury-gold" />
                </div>
-               <span className="leading-relaxed group-hover:text-gray-200 transition-colors">Büyükşehir Mah. Beylikdüzü Cd.<br /> No: 5 F, İstanbul</span>
+               <span className="leading-relaxed group-hover:text-gray-200 transition-colors">Büyükşehir Mah. Beylikdüzü Cd. A Blok<br /> No: 5 F, İstanbul</span>
             </li>
             <li className="flex gap-4 items-center group">
                <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-luxury-gold/20 transition-colors">
@@ -84,7 +84,7 @@ export const Footer: React.FC = () => {
            
            {/* Custom Instagram Card */}
            <a 
-             href="https://www.instagram.com/luxuryhousejewellery/" 
+             href="https://www.instagram.com/luxury_house_kuyumculuk/" 
              target="_blank" 
              rel="noopener noreferrer"
              className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.06] transition-all duration-500 p-6 flex flex-col gap-4 hover:border-luxury-gold/30 hover:shadow-[0_0_30px_rgba(212,175,55,0.1)]"
@@ -103,7 +103,7 @@ export const Footer: React.FC = () => {
 
              <div className="relative z-10">
                <p className="text-[10px] text-luxury-gold uppercase tracking-[0.2em] mb-1 font-bold">Takip Edin</p>
-               <p className="text-sm font-medium text-white group-hover:text-luxury-gold/90 transition-colors">@luxuryhousejewellery</p>
+               <p className="text-sm font-medium text-white group-hover:text-luxury-gold/90 transition-colors">@luxury_house_kuyumculuk</p>
                <p className="text-xs text-gray-500 mt-2 line-clamp-2">En yeni koleksiyonlar ve özel tasarımlarımız için Instagram'da bize katılın.</p>
              </div>
            </a>

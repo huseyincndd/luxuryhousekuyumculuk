@@ -25,7 +25,7 @@ export default function IletisimPage() {
            
            <div className="relative z-10 text-center max-w-4xl px-6 mt-16 md:mt-20">
               <span className="block text-luxury-gold text-[10px] md:text-xs tracking-[0.5em] uppercase mb-4 md:mb-6 animate-fade-in-up">
-                Private Concierge
+                Luxury Concierge
               </span>
               <h1 className="font-serif text-4xl md:text-8xl text-white leading-none tracking-tight mb-6 md:mb-8 animate-fade-in-up" style={{animationDelay: '0.1s'}}>
                 İLETİŞİME <span className="italic font-light text-gray-400">GEÇİN</span>
@@ -64,9 +64,9 @@ export default function IletisimPage() {
                      <div className="flex items-start gap-4">
                         <MapPin className="w-5 h-5 md:w-6 md:h-6 text-white shrink-0 mt-1" />
                         <div>
-                           <h4 className="font-serif text-xl md:text-2xl text-white mb-1 md:mb-2">Flagship Store</h4>
+                           <h4 className="font-serif text-xl md:text-2xl text-white mb-1 md:mb-2">Mağazamız</h4>
                            <p className="text-gray-400 font-light leading-relaxed text-xs md:text-sm">
-                             BÜYÜKŞEHİR MAH. BEYLİKDÜZÜ CD. No: 5 F<br />
+                             BÜYÜKŞEHİR MAH. BEYLİKDÜZÜ CD. A BLOK No: 5 F<br />
                              BEYLİKDÜZÜ / İSTANBUL
                            </p>
                            <a href="#map" className="text-luxury-gold text-[10px] md:text-xs uppercase tracking-wider mt-2 inline-block border-b border-transparent hover:border-luxury-gold">Haritada Göster</a>
@@ -81,7 +81,7 @@ export default function IletisimPage() {
                         <div>
                            <h4 className="font-serif text-xl md:text-2xl text-white mb-1 md:mb-2">Telefon</h4>
                            <p className="text-gray-400 font-light text-xs md:text-sm">
-                             Haftanın her günü, 09:00 - 22:00
+                             Haftanın her günü, 09:30 - 19:30
                            </p>
                            <p className="text-white text-base md:text-lg mt-1">+90 539 719 65 58</p>
                         </div>

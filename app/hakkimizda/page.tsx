@@ -72,8 +72,8 @@ export default function HakkimizdaPage() {
                </div>
                <div className="mt-8 md:mt-12 flex items-center gap-4">
                  <div className="h-[1px] w-8 md:w-12 bg-luxury-gold"></div>
-                 <span className="font-serif italic text-lg md:text-xl text-white">Mehmet K.</span>
-                 <span className="text-[10px] md:text-xs uppercase tracking-widest text-gray-500">Kurucu & Baş Tasarımcı</span>
+                 <span className="font-serif italic text-lg md:text-xl text-white">Luxury House</span>
+                 <span className="text-[10px] md:text-xs uppercase tracking-widest text-gray-500">Mücevher Tasarım Evi</span>
                </div>
             </div>
 
