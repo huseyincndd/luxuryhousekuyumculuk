@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
                <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-luxury-gold/20 transition-colors">
                  <Mail className="w-4 h-4 text-luxury-gold" />
                </div>
-               <a href="mailto:info@luxuryhouse.com" className="group-hover:text-white transition-colors">info@luxuryhouse.com</a>
+               <a href="mailto:info@luxuryhousejewelry.com" className="group-hover:text-white transition-colors">info@luxuryhousejewelry.com</a>
             </li>
           </ul>
         </div>

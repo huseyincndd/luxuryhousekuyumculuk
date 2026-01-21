@@ -94,7 +94,7 @@ export default function IletisimPage() {
                         <Mail className="w-5 h-5 md:w-6 md:h-6 text-white shrink-0 mt-1" />
                         <div>
                            <h4 className="font-serif text-xl md:text-2xl text-white mb-1 md:mb-2">E-Posta</h4>
-                           <p className="text-white text-base md:text-lg mt-1">info@luxuryhouse.com</p>
+                           <p className="text-white text-base md:text-lg mt-1">info@luxuryhousejewelry.com</p>
                         </div>
                      </div>
                   </div>
